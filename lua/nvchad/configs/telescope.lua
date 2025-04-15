@@ -2,6 +2,7 @@ dofile(vim.g.base46_cache .. "telescope")
 
 return {
   defaults = {
+    no_ignore = true,
     prompt_prefix = "   ",
     selection_caret = " ",
     entry_prefix = " ",
