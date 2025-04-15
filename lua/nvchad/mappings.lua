@@ -66,7 +66,7 @@ map("n", "<leader>th", function()
   require("nvchad.themes").open()
 end, { desc = "telescope nvchad themes" })
 
-map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "telescope find files" })
+map("n", "<leader>ff", "<cmd>Telescope find_files follow=true no_ignore=true hidden=true <cr>", { desc = "telescope find files" })
 map(
   "n",
   "<leader>fa",
