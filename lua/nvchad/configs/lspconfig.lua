@@ -70,6 +70,7 @@ M.defaults = function()
   vim.lsp.config('jdtls', { cmd = { 'jdtls' } })
   vim.lsp.enable('jdtls')
   vim.lsp.enable "lua_ls"
+  require'lspconfig'.ts_ls.setup {}
 end
 
 return M
