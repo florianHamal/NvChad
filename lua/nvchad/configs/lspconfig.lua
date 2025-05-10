@@ -70,7 +70,9 @@ M.defaults = function()
   vim.lsp.config('jdtls', { cmd = { 'jdtls' } })
   vim.lsp.enable('jdtls')
   vim.lsp.enable "lua_ls"
+  --needs typesctipt_language_server npm package
   require'lspconfig'.ts_ls.setup {}
+  require'lspconfig'.pyright.setup{}
 end
 
 return M
